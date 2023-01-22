@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TryingSearchActivity</string>
+    <string name="search_hint">Search Movie Name</string>
+    <string name="todo">TODO</string>
+</resources>

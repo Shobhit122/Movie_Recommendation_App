@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewlast"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check4" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shadoweffect" />
+
+                <TextView
+                    android:id="@+id/Moviename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/allerta"
+                    android:padding="10dp"
+                    android:text="Black Adam"
+                    android:textColor="#ffffff"
+                    android:textSize="40dp"
+                    android:textAlignment="center"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardViewlast">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/linear">
+                <TextView
+                    android:id="@+id/mRatings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/star"
+                    android:text="R"
+                    android:textColor="#791F29"
+
+
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                    android:text="Duration"
+                    android:textColor="#791F29"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/release_date"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="Release date"
+                    android:textColor="#791F29"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linear"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Genre:"
+
+                    android:textColor="#6A4C1F"
+                    android:textSize="25dp" />
+
+
+                <TextView
+                    android:id="@+id/over_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_below="@+id/genre"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Overview:"
+
+                    android:textColor="#791F29"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/over_view"
+
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="17dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="In ancient Kahndaq, Teth Adam was bestowed the almighty powers of the gods. After using these powers for vengeance, he was imprisoned, becoming Black Adam. Nearly 5,000 years have passed, and Black Adam has gone from man to myth to legend. Now free, his unique form of justice, born out of rage, is challenged by modern-day heroes who form the Justice Society: Hawkman, Dr. Fate, Atom Smasher and Cyclone."
+
+                    android:textColor="#6A4C1F"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</layout>
